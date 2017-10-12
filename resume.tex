@@ -18,8 +18,11 @@
 
 \usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
 
-\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
-% To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be 
+\addtolength{\voffset}{-1.3cm}
+\addtolength{\hoffset}{-0.7cm}
+\addtolength{\textwidth}{2cm}
+\addtolength{\textheight}{2cm}
 
 \usepackage{hyperref} % Required for adding links	and customizing them
 \definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
@@ -50,7 +53,6 @@ Address / Contact: & Mobile: +91 9591847397 \\
 Portfolio / Blog: & \href{http://clweb.csa.iisc.ernet.in/res15/kumudha.kn/}{http://clweb.csa.iisc.ernet.in/res15/kumudha.kn/}\\
 email: & \href{mailto:kumudhakn@gmail.com}{kumudhakn@gmail.com}\\ 
 & \href{mailto:kumudha@iisc.ac.in}{kumudha@iisc.ac.in}\\
-&\\
 \end{tabular}
 
 %----------------------------------------------------------------------------------------
@@ -86,7 +88,6 @@ July 2006 & \textbf{B P Indian Public School}, Malleshwaram, Bangalore, India\\
 & ICSE 10\textsuperscript{th} \\
 &\normalsize Percentage: 90.16 \\
 &\\
-&\\
 \end{tabular}
 
 %----------------------------------------------------------------------------------------
@@ -95,10 +96,10 @@ July 2006 & \textbf{B P Indian Public School}, Malleshwaram, Bangalore, India\\
 
 \section{Work Experience}
 
-\begin{tabular}{r|p{10cm}}
+\begin{tabular}{r|p{12cm}}
 June 2012 to July 2015 & Technology Analyst at Goldman Sachs, Bangalore, India \\
 {(3 years 1 month)}& \emph{Investment Banking Technology}\\ 
-& \small {Application Infrastructure Team under the Investment Banking Division (IBD) Technology} \\
+& \small {Application Infrastructure Team under the Investment Banking Division (IBD) Tech} \\
 & \small {Focused on building and standardizing frameworks in C\#, Java, .NET for
 applications developed in the division}\\
 & \\
@@ -106,12 +107,11 @@ applications developed in the division}\\
 
 June 2011 to August 2011 & Summer Analyst at Goldman Sachs, Bangalore, India \\
 {(3 months)}& \small{Re-architected and enhanced the UI of a Reporting application.}\\
-& \small{ Received Pre-Placement offer for ``\emph{disctinctive}`` Performance }\\
+& \small{ Received Pre-Placement offer for ``\emph{distinctive}`` Performance }\\
 & \\
 
 \end{tabular}
 
-\newpage
 
 %----------------------------------------------------------------------------------------
 %	Publications
@@ -119,15 +119,15 @@ June 2011 to August 2011 & Summer Analyst at Goldman Sachs, Bangalore, India \\
 \section{Publications}
 \textbf{Optimizing Geometric Multigrid Method Computation using a DSL Approach}\\
 \small{Vinay Vasista, Kumudha KN, Siddharth Bhat, Uday Bondhugula} \\
-\small{The International Conference for High Performance Computing, Networking, Storage and Analysis. SuperComputing 2017 (To Appear)} \\
+\small{The International Conference for High Performance Computing, Networking, Storage and Analysis. \\ SuperComputing 2017 (To Appear)} \\
 
 
 \textbf{An Empirical Comparative Study and Optimization of the Hadoop Scheduler} \\
 \small{Jayalakshmi DS, Kumudha KN, Tejala T, Veena Pilli}\\
 \small{International Conference on Emerging Trends in Electrical, Electronics and 
-Communication Technologies-ICECIT, 2012, pgs 350-356,2012}
+Communication Technologies \\ ICECIT, 2012, pgs 350-356,2012}
 \\
-\\
+\newpage
 %----------------------------------------------------------------------------------------
 %	SOFTWARE and Hardware proficiency
 %----------------------------------------------------------------------------------------
@@ -137,15 +137,15 @@ Communication Technologies-ICECIT, 2012, pgs 350-356,2012}
 Software & \tabitem \textit{Compiler Tools:} isl, Barvinok, Pluto\\
 & \tabitem \textit{DNN Frameworks:} Caffe, Latte\\
 & \tabitem \textit{Architectural Simulators:} gem5-gpu, gem5\\
-& \tabitem \textit{Programming Languages:} C, C++, Java, Python, Hibernate, Spring, C\#,\\
-& ~~~~.NET, ASP, .NET, WPF, WCF, shell scripting\\
 & \tabitem \textit{Development Platforms:} Eclipse, VI / VIM, Visual Studio, gedit, TexStudio\\
 & \tabitem{BuildFramework:} Gradle,Maven \\
 & \tabitem \textit{Web Technology:} HTML5, CSS3, AngularJS, ExtJS, XML\\
 & \tabitem \textit{Operating Systems:} Linux (CentOS, Ubuntu), Windows \\
-& \tabitem \textit{Libraries:} CUDA, OpenML, OpenGL  \\
+& \tabitem \textit{Libraries:} CUDA, OpenMP, OpenGL  \\
 & \tabitem \textit{Tools:} \LaTeX\ , git, svn, gdb, Intel VTune\\
 & \tabitem \textit{Database:} MySQL, Oracle, SQL Server\\
+& \tabitem \textit{Programming Languages:} C, C++, Java, Python, Hibernate, Spring, C\#, .NET, ASP, WPF, WCF, shell scripting\\
+%& ~~~~.NET, ASP, .NET, WPF, WCF, shell scripting\\
 
 &\\
 
@@ -153,7 +153,7 @@ Hardware  & \tabitem Hardware Accelerators \\
 & ~~~~Intel MIC (XeonPhi KNC) and NVIDIA GPGPUs (Fermi, Kepler) \\
 & \tabitem Micro-Architecture of Modern x86 CPUs\\
 & ~~~~(Nehalem / Westmere, SandyBridge / IvyBridge, Haswell) \\ 
-& \tabitem 8051 based Microcontroller Programming \\
+& \tabitem 8051 based Micro-controller Programming \\
 &\\
 \end{tabular}
 \\
@@ -164,7 +164,7 @@ Hardware  & \tabitem Hardware Accelerators \\
 
 \section{Positions Held}
 
-\begin{tabular}{lr}
+\begin{tabular}{p{12cm}r}
 \tabitem Teaching Assistant for Compiler Design (E0256,) IISc  & Jan 2016 - Apr 2016 \\
 &\\
 \tabitem Member of Department Curriculum Committee &  2016 - 2017\\
@@ -183,7 +183,7 @@ Hardware  & \tabitem Hardware Accelerators \\
 %	PROJECTS 
 %----------------------------------------------------------------------------------------
 \section{Projects}
-\begin{tabular}{rp{11cm}}
+\begin{tabular}{rp{13cm}}
 &\\
 Projects at & \textbf{Optimizing Geometric Multigrid Method Computation using a DSL Approach} \\
 INDIAN INSTITUTE & \hspace{25em} \textbf{[To Appear in SC 2017]} \\
@@ -200,22 +200,21 @@ effective optimization and parallelization support (performance) is thus valuabl
 & \hspace{25em} \textbf{[Work in Progress]}\\
 & \setlength{\leftskip}{0.4cm}
 Linear algebra kernels constitute an important part of the computation in domains like deep neural networks, scientific computing, media processing and many others. A Domain specific language which provides high performance and aids in productivity is thus very useful.\\
-& \\
-& \\
-& \textbf{Evaluating Performance Overheads in Program execution of Scripting Languages under Virtual Machine Environment} \\
+\end{tabular}
+
+\section{Projects}
+\begin{tabular}{rp{13cm}}
+Projects at IISc& \textbf{Evaluating Performance Overheads in Program execution of Scripting Languages under Virtual Machine Environment} \\
 & \setlength{\leftskip}{0.4cm}
 Scripting languages are widely used among statisticians and data miners for developing statistical software and data analysis. They are run on virtual machines which are either interpreted or compiled just-in-time during execution. This work evaluates the overheads associated with the execution of MATLAB scripting languages under McVM virtual machine environment.\\
-& \\
 & \\
 & \textbf{Parallelize and optimize the CAFFE DNN framework on a multicore CPU}\\
 & \setlength{\leftskip}{0.4cm}
 CAFFE is one of the early frameworks for deep neural networks. CAFFE accepts a configuration containing the neural network topology and can perform both training, testing and inference. CAFFE has support for executing  on both CPUs and GPUs hardware. We optimize the CPU version of Caffe to improve its performance using loop transforms for extracting parallelism.\\
 & \\
-& \\
 & \textbf{Optimizations for Image Processing Pipeline} \\
 & \setlength{\leftskip}{0.4cm}
 Hand optimization of image processing pipelines like unsharp mask, harris corner detection, max\_filter, etc on multi-core CPUs. These optimization included loop permutation, tiling for cache locality and parallelism.\\
-&\\
 & \\
 & \textbf{Integrated Heterogeneous System (IHS) Architecture with shared Die Stacked DRAM Cache} \\
 & \setlength{\leftskip}{0.4cm}
@@ -223,9 +222,7 @@ Modern processors chips integrate multi-core CPUs and general purpose accelerato
 & \setlength{\leftskip}{0.4cm} 
 Die-stacking technology allows high bandwidth and large capacity DRAM to be integrated close to the processor. Using this memory as shared cache brings novel challenges in resource sharing and request scheduling due to the architectural heterogeneity. This has has varied implications on performance of the latency sensitive CPUs vs throughput oriented GPGPUs.\\
 &\\
-\end{tabular}
-
-\begin{tabular}{rp{11cm}}
+&\\
 Projects at  &  \textbf{Re-architecting of resource discovery system} \\
 GOLDMAN SACHS &  \tabitem Technologies used: WPF, WCF, .NET 3.5, SQL Server, IIS7, VS2010 \\
 & \tabitem WPF for the front end with complete MVVM model\\
@@ -242,6 +239,7 @@ GOLDMAN SACHS &  \tabitem Technologies used: WPF, WCF, .NET 3.5, SQL Server, IIS
 & \tabitem POJO and Spring java client for the various REST services \\ 
 & \\
 & Inherited several C\# projects and was responsible for all the sustenance and continued development / enhancements of the same\\
+&\\
 &\\
 Projects at & \textbf{A comparative Study and Optimization of Hadoop Scheduler [ICECIT 2012]}\\ 
 M S Ramaiah & \setlength{\leftskip}{0.4cm} Hadoop is a general-purpose system that enables high-performance process-\\
@@ -302,7 +300,7 @@ Strengths & \tabitem Adaptability, Quick learner, Hardworking and Dedication\\
 & \tabitem Analytical and Mathematical Problem Solving, Designing Algorithms \\
 & ~~~~and practical Solutions to given problems \\
 & \\
-Hobbies & \tabitem An avid classical dance enthusiast and practicioner\\
+Hobbies & \tabitem An avid classical dance enthusiast and practitioner\\
 & \tabitem A genuine penchant for reading novels from crime, thriller and drama genre\\
 & \tabitem Programming, Solving challenging problems either conceptually or programmatically \\
 & \\
