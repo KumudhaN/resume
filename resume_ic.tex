@@ -177,25 +177,37 @@ The Geometric Multigrid (GMG) method is widely used in numerical analysis to acc
 a hierarchy of grid discretizations. However, multiple grid sizes and recursive 
 expression of multigrid cycles make the task of program optimization tedious.
 A high-level language that aids domain experts (productivity) for GMG with
-effective optimization and parallelization support (performance) is thus valuable.\\
+effective optimization and parallelization support (performance) is thus
+valuable. Technologies used in this project include python, C/C++ and pgfplot.\\
 & \\
 & \\
 & \textbf{Optimizing Dense Matrix Computations with Polymage } \\
 & \hspace{25em} \textbf{[Under Preparation]}\\
 & \setlength{\leftskip}{0.4cm}
-Matrix computations constitute an important part in domains like deep neural networks, scientific computing, media processing and many others. A Domain specific language which provides high performance and aids in productivity is thus very useful.\\
+Matrix computations constitute an important part in domains like digital signal
+processing, scientific computing, media processing and many others. A Domain
+specific language(DSL) which provides high performance and aids in productivity is
+thus very useful. Polymage is a DSL which accepts specification in python based
+format and generates optimized C/C++ code after performing transformations on
+the input specification.\\
 &\\
 & \textbf{Evaluating Performance Overheads in Program execution of Scripting Languages under Virtual Machine Environment} \\
 & \setlength{\leftskip}{0.4cm}
-Scripting languages are widely used among statisticians and data miners for developing statistical software and data analysis. They are run on virtual machines which are either interpreted or compiled just-in-time during execution. This work evaluates the overheads associated with the execution of MATLAB scripting languages under McVM virtual machine environment.\\
+Scripting languages are widely used among statisticians and data miners for
+developing statistical software and data analysis. They are run on virtual
+machines which are either interpreted or compiled just-in-time during
+execution. McVM is a
+virtual machine implemented in C/C++ which implements a significant subset of
+the MATLAB language.This work evaluates the overheads associated with the execution of
+MATLAB scripting languages under McVM virtual machine environment.\\
 & \\
 & \textbf{Parallelize and optimize the CAFFE DNN framework on a multicore CPU}\\
 & \setlength{\leftskip}{0.4cm}
-CAFFE is one of the early frameworks for deep neural networks. CAFFE accepts a configuration containing the neural network topology and can perform training, testing and inference. CAFFE has support for executing  on both CPUs and GPUs. We optimize the CPU version of Caffe to improve its performance using loop transforms for extracting parallelism.\\
+CAFFE is one of the early frameworks for deep neural networks written in C++. CAFFE accepts a configuration in protobuf containing the neural network topology and can perform training, testing and inference. CAFFE has support for executing  on both CPUs and GPUs. We optimize the CPU version of Caffe to improve its performance using loop transforms for extracting parallelism.\\
 &\\
 & \textbf{Optimizations for Image Processing Pipeline} \\
 & \setlength{\leftskip}{0.4cm}
-Hand optimization of image processing pipelines like unsharp mask, harris corner detection, max\_filter, etc on multi-core CPUs. These optimization included loop permutation, tiling for cache locality and parallelism.\\
+Hand optimization of image processing pipelines like unsharp mask, harris corner detection, max\_filter, etc on multi-core CPUs. These optimizations included loop permutation, tiling for cache locality and parallelism and were done in C/C++.\\
 \end{tabular}
 
 \section{Projects}
@@ -204,12 +216,18 @@ Projects at IISc& \textbf{Integrated Heterogeneous System (IHS) Architecture wit
 & \setlength{\leftskip}{0.4cm}
 Modern processors chips integrate multi-core CPUs and general purpose accelerator GPUs on the same die. These IHS processors have high bandwidth requirement and large working sets.\\
 & \setlength{\leftskip}{0.4cm} 
-Die-stacking technology allows high bandwidth and large capacity DRAM to be integrated close to the processor. Using this memory as shared cache brings novel challenges in resource sharing and request scheduling due to the architectural heterogeneity. This has varied implications on performance of the latency sensitive CPUs vs throughput oriented GPGPUs.\\
+Die-stacking technology allows high bandwidth and large capacity DRAM to be
+integrated close to the processor. Using this memory as shared cache brings
+novel challenges in resource sharing and request scheduling due to the
+architectural heterogeneity. This has varied implications on performance of the
+latency sensitive CPUs vs throughput oriented GPGPUs. The simulations were done
+on a C/C++ based gem5-gpu simulator.\\
 &\\
 &\\
 Projects at  &  Tizen studio (IDE for Tizen OS) infrastructure development \\
-Samsung R\&D &  Analysis on custom profilers and debuggers for $C\#$ 
-applications  
+Samsung R\&D & Tizen Studio is a set of tools for developing Tizen native and Web applications. It consists of an IDE, Emulator and toolchain. It runs on Windows, Ubuntu and macOS. Native applications are developed using the C programming language and are then run on an emulator or a target device. \\
+&\\
+& Analysis and custom implementation of debuggers for tizen applications using Debugger Adapter Protocol for Visual Studio for macOS.  
 \\
 & Coaching for professional level internal competitive coding exam on data 
 structures and algorithms \\

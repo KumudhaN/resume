@@ -1,12 +1,15 @@
 RESUME=resume
+RESUME1=resume_ic
 
-default: resume
+default: resume resume_ic
 
 resume:
 	xelatex $(RESUME).tex
 	xelatex $(RESUME).tex
+resume_ic:
+	xelatex $(RESUME1).tex
+	xelatex $(RESUME1).tex
 
-cleaner:
-	rm -f $(RESUME).log $(RESUME).aux $(RESUME).out $(RESUME).synctex.gz $(RESUME).pdf
+
 clean:
-	rm -f $(RESUME).pdf
+	rm -f *.log *.aux *.out *.synctex.gz *.pdf
