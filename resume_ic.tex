@@ -178,7 +178,7 @@ a hierarchy of grid discretizations. However, multiple grid sizes and recursive
 expression of multigrid cycles make the task of program optimization tedious.
 A high-level language that aids domain experts (productivity) for GMG with
 effective optimization and parallelization support (performance) is thus
-valuable. Technologies used in this project include python, C/C++ and pgfplot.\\
+valuable. Technologies used: C/C++, python and pgfplot.\\
 & \\
 & \\
 & \textbf{Optimizing Dense Matrix Computations with Polymage } \\
@@ -189,7 +189,7 @@ processing, scientific computing, media processing and many others. A Domain
 specific language(DSL) which provides high performance and aids in productivity is
 thus very useful. Polymage is a DSL which accepts specification in python based
 format and generates optimized C/C++ code after performing transformations on
-the input specification.\\
+the input specification. Technologies used: C/C++, python and pgfplot.\\
 &\\
 & \textbf{Evaluating Performance Overheads in Program execution of Scripting Languages under Virtual Machine Environment} \\
 & \setlength{\leftskip}{0.4cm}
@@ -199,20 +199,21 @@ machines which are either interpreted or compiled just-in-time during
 execution. McVM is a
 virtual machine implemented in C/C++ which implements a significant subset of
 the MATLAB language.This work evaluates the overheads associated with the execution of
-MATLAB scripting languages under McVM virtual machine environment.\\
+MATLAB scripting languages under McVM virtual machine environment. Technologies used: C/C++ and Intel PIN tool.\\
 & \\
 & \textbf{Parallelize and optimize the CAFFE DNN framework on a multicore CPU}\\
 & \setlength{\leftskip}{0.4cm}
-CAFFE is one of the early frameworks for deep neural networks written in C++. CAFFE accepts a configuration in protobuf containing the neural network topology and can perform training, testing and inference. CAFFE has support for executing  on both CPUs and GPUs. We optimize the CPU version of Caffe to improve its performance using loop transforms for extracting parallelism.\\
-&\\
-& \textbf{Optimizations for Image Processing Pipeline} \\
-& \setlength{\leftskip}{0.4cm}
-Hand optimization of image processing pipelines like unsharp mask, harris corner detection, max\_filter, etc on multi-core CPUs. These optimizations included loop permutation, tiling for cache locality and parallelism and were done in C/C++.\\
+CAFFE is one of the early frameworks for deep neural networks written in C++. CAFFE accepts a configuration in protobuf containing the neural network topology and can perform training, testing and inference. CAFFE has support for executing  on both CPUs and GPUs. We optimize the CPU version of Caffe to improve its performance using loop transforms for extracting parallelism. Technology used: C/C++ and Intel vTune profiler.\\
+
 \end{tabular}
 
 \section{Projects}
 \begin{tabular}{rp{13cm}}
-Projects at IISc& \textbf{Integrated Heterogeneous System (IHS) Architecture with shared Die Stacked DRAM Cache} \\
+Projects at IISc& \textbf{Optimizations for Image Processing Pipeline} \\
+& \setlength{\leftskip}{0.4cm}
+Hand optimization of image processing pipelines like unsharp mask, harris corner detection, max\_filter, etc on multi-core CPUs. These optimizations included loop permutation, tiling for cache locality and parallelism and were done in C/C++. Technology used: C/C++ and Intel vTune profiler.\\
+&\\
+& \textbf{Integrated Heterogeneous System (IHS) Architecture with shared Die Stacked DRAM Cache} \\
 & \setlength{\leftskip}{0.4cm}
 Modern processors chips integrate multi-core CPUs and general purpose accelerator GPUs on the same die. These IHS processors have high bandwidth requirement and large working sets.\\
 & \setlength{\leftskip}{0.4cm} 
@@ -221,7 +222,7 @@ integrated close to the processor. Using this memory as shared cache brings
 novel challenges in resource sharing and request scheduling due to the
 architectural heterogeneity. This has varied implications on performance of the
 latency sensitive CPUs vs throughput oriented GPGPUs. The simulations were done
-on a C/C++ based gem5-gpu simulator.\\
+on a cycle accurate CPU-GPU simulator (gem5-gpu). Technology used: C/C++, Object orient programming and STLs.\\
 &\\
 &\\
 Projects at  &  Tizen studio (IDE for Tizen OS) infrastructure development \\
@@ -259,13 +260,12 @@ Projects at & \textbf{A comparative Study and Optimization of Hadoop Scheduler [
 M S Ramaiah & \setlength{\leftskip}{0.4cm} Hadoop is a general-purpose system that enables high-performance process-\\
 Inst of Tech & \setlength{\leftskip}{0.4cm}
 ing  of data over a set of distributed nodes. This work focuses on an empirical comparison of the default Hadoop scheduler with Fair scheduler and Capacity scheduler for data intensive applications. We determine suitable schedulers for different class of workloads. Further, we propose improvements over the above schedulers and evaluate  the same.\\ 
-& \\
-& Mini project on “Walking Robot” in OpenGL under Prof. DS Jayalakshmi (2011)\\ 
-& Mini project of “File Transfer in C\#, .NET” under Prof. Kavitha Jayaram (2010)\\
-& Database project “Tourism Information system” under Prof. Arul Kumar (2010)\\
+%& \\
+%& Mini project on “Walking Robot” in OpenGL under Prof. DS Jayalakshmi (2011)\\ 
+%& Mini project of “File Transfer in C\#, .NET” under Prof. Kavitha Jayaram (2010)\\
+%& Database project “Tourism Information system” under Prof. Arul Kumar (2010)\\
 & \\
 \end{tabular}
-\\
 
 %----------------------------------------------------------------------------------------
 %	POSITIONS HELD
